@@ -1,9 +1,11 @@
+import java.util.InputMismatchException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class To_Do_List{
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
+        try{
         ArrayList<String> tasks= new ArrayList<>();
         int choice;
 
@@ -55,6 +57,16 @@ public class To_Do_List{
             }
         }  
         while(choice!=4);
-        sc.close();
+        }
+        catch(InputMismatchException e){
+            System.out.println("Invalid input. Please enter a number.");
+        }
+        catch(Exception e){
+            System.out.println("An unexpected error occurred: " + e.getMessage());
+        }
+        finally{
+            System.out.println("===================PROGRAM ENDED===================");
+            sc.close();
+        }  
     }
 }

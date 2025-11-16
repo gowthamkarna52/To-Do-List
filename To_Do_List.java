@@ -2,7 +2,7 @@ import java.util.InputMismatchException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class To_Do_List{
+public class To_Do_List{ 
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
         try{
@@ -10,7 +10,7 @@ public class To_Do_List{
         int choice;
 
         do{
-            System.out.println("===To-Do List Menu===");
+            System.out.println("==== To-Do List Menu ====");
             System.out.println("1.View Tasks");
             System.out.println("2.Add Task");
             System.out.println("3.Delete Task");
@@ -70,3 +70,4 @@ public class To_Do_List{
         }  
     }
 }
+
